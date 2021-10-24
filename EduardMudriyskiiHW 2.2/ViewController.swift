@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorView: UIView!
     
+    
     @IBOutlet weak var redSlider: UISlider! {
         didSet{
             redSlider.tintColor = UIColor.red
@@ -33,8 +34,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenLabel: UILabel!
     @IBOutlet weak var blueLabel: UILabel!
     
+   
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        colorView.layer.cornerRadius = 20
+        
     }
     
     func changeTextLabel() {
